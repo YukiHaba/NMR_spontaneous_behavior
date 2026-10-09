@@ -1,0 +1,18 @@
+model,true_class,predicted_class,n_animals
+Sex,Female,Female,19
+Sex,Female,Male,19
+Sex,Male,Female,17
+Sex,Male,Male,27
+Reproductive role,Queen,Queen,0
+Reproductive role,Queen,Breeding male,0
+Reproductive role,Queen,Nonbreeder,4
+Reproductive role,Breeding male,Queen,0
+Reproductive role,Breeding male,Breeding male,0
+Reproductive role,Breeding male,Nonbreeder,3
+Reproductive role,Nonbreeder,Queen,0
+Reproductive role,Nonbreeder,Breeding male,0
+Reproductive role,Nonbreeder,Nonbreeder,78
+Breeder status,Breeder,Breeder,0
+Breeder status,Breeder,Nonbreeder,7
+Breeder status,Nonbreeder,Breeder,0
+Breeder status,Nonbreeder,Nonbreeder,78

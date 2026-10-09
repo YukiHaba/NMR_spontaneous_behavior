@@ -1,0 +1,5 @@
+colony,n_animals,n_dyads_tested,n_complete_triads,transitivity,p_permutation,n_permutations
+B,18,153,638,0.978056,9.999e-05,10000
+H,20,73,97,0.979381,9.999e-05,10000
+S,19,74,76,0.947368,9.999e-05,10000
+P,27,93,74,0.972973,9.999e-05,10000

@@ -1,0 +1,43 @@
+# Keypoint-MoSeq project configuration.
+
+#==================== ANATOMY =====================#
+bodyparts: [nose, l_ear, r_ear, centroid, l_hindpaw, r_hindpaw, tailbase]
+use_bodyparts: [nose, l_ear, r_ear, centroid, l_hindpaw, r_hindpaw, tailbase]
+skeleton:
+- [nose, l_ear]
+- [nose, r_ear]
+- [l_ear, centroid]
+- [r_ear, centroid]
+- [centroid, l_hindpaw]
+- [centroid, r_hindpaw]
+- [l_hindpaw, tailbase]
+- [r_hindpaw, tailbase]
+anterior_bodyparts: [nose]
+posterior_bodyparts: [tailbase]
+
+#================= MODEL SETTINGS =================#
+fps: 60.0
+conf_threshold: 0.5          # keypoints below this confidence are treated as missing
+outlier_scale_factor: 6.0    # spatial-outlier threshold for interpolation
+ar_hypparams:
+  latent_dim: 5              # PCA dimensions used for pose dynamics
+  nlags: 3                   # autoregressive lags
+  K_0_scale: 10.0
+  S_0_scale: 0.01
+trans_hypparams:
+  num_states: 100            # maximum number of candidate syllables
+  kappa: 10000000.0          # selected temporal scale (scanned 1e5 to 1e7)
+  alpha: 5.7
+  gamma: 1000.0
+
+#============ KEYPOINT-MOSEQ DEFAULTS =============#
+added_noise_level: 0.1
+obs_hypparams: {nu_s: 5, nu_sigma: 100000.0, sigmasq_0: 0.1, sigmasq_C: 0.1}
+cen_hypparams: {sigmasq_loc: 0.5}
+conf_pseudocount: 0.001
+whiten: true
+fix_heading: false
+recording_name_suffix: ''
+verbose: false
+keypoint_colormap: autumn
+video_dir: /path/to/videos

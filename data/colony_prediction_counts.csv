@@ -1,0 +1,14 @@
+true_colony,predicted_colony,n_animals
+B,B,12
+B,P,2
+B,S,4
+H,B,2
+H,H,14
+H,P,4
+H,S,1
+P,H,8
+P,P,18
+P,S,1
+S,B,1
+S,P,6
+S,S,12

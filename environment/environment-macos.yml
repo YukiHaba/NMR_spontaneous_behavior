@@ -1,0 +1,11 @@
+name: nmr-analysis
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - numpy
+  - pandas
+  - scipy
+  - scikit-learn
+  - h5py
+  - umap-learn
